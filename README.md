@@ -1,11 +1,14 @@
-Neural Networks from Scratch
+# Neural Networks from Scratch
 
-This repository contains implementations of neural networks from first principles, following the book Neural Networks and Deep Learning by Michael Nielsen.
+**Implementations of neural networks from first principles**, following the book [*Neural Networks and Deep Learning*](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen.
 
-The main objective is to explore the mathematical foundations and computational aspects of neural networks, implementing the underlying algorithms using Python and NumPy.
+The objective of this project is to explore the mathematical foundations and computational aspects of neural networks, implementing the underlying algorithms using Python and NumPy.
 
-Repository Structure
+---
 
+## Repository Structure
+
+```text
 NeuralNetworksFromScratch/
 ├── .gitignore
 ├── README.md
@@ -20,82 +23,76 @@ NeuralNetworksFromScratch/
 ├── network.py
 ├── pyproject.toml
 └── uv.lock
+```
 
-Implementations
+## Implementations
 
 The repository includes implementations of:
 
-Feedforward Neural Networks.
+- **Feedforward Neural Networks**
+- **Stochastic Gradient Descent (SGD)**
+- **Backpropagation**
+- **Mini-batch training**
+- **MNIST handwritten digit classification**
 
-Stochastic Gradient Descent (SGD).
+All algorithms are implemented using Python and NumPy, without relying on high-level deep learning frameworks.
 
-Backpropagation algorithm.
+## Experiments
 
-Mini-batch training.
+The `experiments/` directory contains numerical experiments investigating different aspects of neural network training.
 
-MNIST handwritten digit classification.
+| Experiment | Description |
+|:---|:---|
+| **Learning Curves** | Analysis of training and test performance. |
+| **Evolution of Parameters** | Study of the evolution of weights and biases during training. |
+| **Network Architecture** | Investigation of the influence of network width and architecture on classification performance. |
 
-The algorithms are implemented using Python and NumPy, without relying on high-level deep learning frameworks.
-
-Experiments
-
-The experiments/ directory contains numerical experiments investigating different aspects of neural network training.
-
-Experiment
-
-Description
-
-Learning Curves
-
-Analysis of training and test performance.
-
-Evolution of Parameters
-
-Study of the evolution of weights and biases during training.
-
-Network Architecture
-
-Investigation of the influence of network width and architecture on classification performance.
-
-Theoretical Notes
+## Theoretical Notes
 
 Alongside the implementations, I am developing a set of lecture notes covering the mathematical foundations of feedforward neural networks.
 
 The notes include mathematical derivations, theoretical discussions, and illustrative examples.
 
-Status: Work in Progress.
+> **Status: Work in Progress**
+>
+> These lecture notes are currently under development. The material is being progressively expanded, revised, and supplemented with mathematical derivations, illustrations, and practical examples.
 
-The latest version is available here:
+📄 **[Read the Lecture Notes](./NotesOnFeedforwardNeuralNetworks.pdf)**
 
-Notes on Feedforward Neural Networks (PDF)
+## Installation and Usage
 
-Installation and Usage
+The project uses Python, NumPy and [uv](https://docs.astral.sh/uv/) for dependency management.
 
-The project uses Python, NumPy and uv for dependency management.
+### Requirements
 
-Requirements
+- Python
+- uv
 
-Python
-
-uv
-
-Installation
+### Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/valvarezcazador/NeuralNetworksFromScratch.git
 cd NeuralNetworksFromScratch
+```
 
 Install the dependencies:
 
+```bash
 uv sync
+```
 
-Running the project
+### Running the project
 
+```bash
 uv run python main.py
+```
 
-References
+## References
 
-Nielsen, M. A. (2015). Neural Networks and Deep Learning. Determination Press. Online book.
+- Nielsen, M. A. (2015). *Neural Networks and Deep Learning*. Determination Press. [Online book](http://neuralnetworksanddeeplearning.com/).
 
-This repository is an ongoing learning and implementation project.
+---
+
+*This repository is an ongoing learning and implementation project.*
